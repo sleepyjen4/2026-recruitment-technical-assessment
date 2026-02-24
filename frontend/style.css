@@ -13,6 +13,8 @@ header {
   padding: 4px 16px;
   border-bottom: 1px solid #e0e0e0;
   color: white;
+
+  transition: 0.3s ease;
 }
 
 .logo-container {
@@ -50,6 +52,10 @@ header {
   border: 1.2px solid rgb(239, 108, 0, 0.7);
   border-radius: 6px;
   cursor: pointer;
+}
+
+.icon-button {
+  transition: 0.3s ease;
 }
 
 .icon-button:hover {
@@ -98,9 +104,16 @@ section {
   align-items: center;
   width: 100%;
   height: 45px;
+  padding: 0 10px;
+
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 0 10px;
+
+  transition: 0.3s ease;
+}
+
+.search-bar-container:hover {
+  border: 1px solid black;
 }
 
 .search-bar-container input {
@@ -137,4 +150,9 @@ section {
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.grid .card img:hover {
+  opacity: 0.7;
 }
