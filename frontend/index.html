@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <a href="/home" class="logo-container">
+      <div href="/home" class="logo-container">
         <img
           src="assets/freeRoomsLogo.png"
           alt="Freerooms Logo"
@@ -22,7 +22,7 @@
           height="50"
         />
         <p>Freerooms</p>
-      </a>
+      </div>
 
       <nav class="nav-buttons">
         <button class="icon-button" aria-label="Search">
@@ -114,5 +114,49 @@
         </button>
       </nav>
     </header>
+    <section>
+      <div class="controls-container">
+        <div class="filter-sort-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M20.17 3.91C20.1062 3.78712 20.0101 3.68399 19.8921 3.61173C19.774 3.53947 19.6384 3.50084 19.5 3.5H4.5C4.36157 3.50084 4.226 3.53947 4.10792 3.61173C3.98984 3.68399 3.89375 3.78712 3.83 3.91C3.76636 4.03323 3.73915 4.17204 3.75155 4.31018C3.76395 4.44832 3.81544 4.58007 3.9 4.69L9.25 12V19.75C9.25259 19.9481 9.33244 20.1374 9.47253 20.2775C9.61263 20.4176 9.80189 20.4974 10 20.5H14C14.1981 20.4974 14.3874 20.4176 14.5275 20.2775C14.6676 20.1374 14.7474 19.9481 14.75 19.75V12L20.1 4.69C20.1846 4.58007 20.236 4.44832 20.2484 4.31018C20.2608 4.17204 20.2336 4.03323 20.17 3.91Z"
+              fill="rgb(239, 108, 0)"
+            />
+          </svg>
+          <p>Filters</p>
+        </div>
+        <div class="search-bar-container">
+          <input type="text" placeholder="Search for a building..." />
+        </div>
+        <div class="filter-sort-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12ZM9 17C9 16.4477 9.44772 16 10 16H14C14.5523 16 15 16.4477 15 17C15 17.5523 14.5523 18 14 18H10C9.44772 18 9 17.5523 9 17Z"
+              fill="rgb(239, 108, 0)"
+            />
+          </svg>
+          <p>Sort</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">Test Card</div>
+        <div class="card">Test Card</div>
+        <div class="card">Test Card</div>
+        <div class="card">Test Card</div>
+      </div>
+    </section>
   </body>
 </html>
