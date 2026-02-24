@@ -12,8 +12,8 @@ fetch("./data.json")
 
       card.innerHTML = `
         <img src="${imgSrc}" alt="${building.name}">
-        <h3>${building.name}</h3>
-        <p>Rooms available: ${building.rooms_available}</p>
+        <div class="card-title">${building.name}</div>
+        <div class="room-available-text"><span class="circle-status"></span>Rooms available: ${building.rooms_available}</div>
       `;
 
       grid.appendChild(card);
