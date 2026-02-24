@@ -1,3 +1,4 @@
+// JSON Data for Building Cards
 fetch("./data.json")
   .then((res) => res.json())
   .then((buildings) => {
@@ -19,3 +20,16 @@ fetch("./data.json")
     });
   })
   .catch((err) => console.error("Error loading data:", err));
+
+// Door Open and Closing Feature
+const freeRoomsDoor = document.getElementById("doorLogo");
+
+function handleClick() {
+  if (freeRoomsDoor.src.includes("freeRoomsLogo.png")) {
+    freeRoomsDoor.src = "assets/freeroomsDoorClosed.png";
+  } else {
+    freeRoomsDoor.src = "assets/freeRoomsLogo.png";
+  }
+}
+
+freeRoomsDoor.addEventListener("click", handleClick);
