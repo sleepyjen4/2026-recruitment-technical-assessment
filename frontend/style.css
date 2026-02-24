@@ -72,6 +72,7 @@ section {
   margin-bottom: 8px;
   justify-content: space-between;
   align-items: center;
+  gap: 100px;
   color: white;
 }
 
@@ -90,4 +91,30 @@ section {
   border: 2px solid rgb(239, 108, 0, 0.7);
   border-radius: 10px;
   cursor: pointer;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.search-bar-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 0;
+  margin-left: 8px;
+
+  background-color: transparent;
+  color: #333;
+}
+
+.search-bar-container input::placeholder {
+  color: #aaa;
 }
